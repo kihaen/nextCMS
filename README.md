@@ -7,6 +7,6 @@ Strapi CMS providing personal project portfolio.
 1. Clone the repository locally:
 
 ```bash
-  npm run deb
+  npm run dev
 ```
 
