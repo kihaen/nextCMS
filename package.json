@@ -5,7 +5,11 @@
     "clear": "cd frontend && rm -rf .next && rm -rf cache",
     "setup:frontend": "cd frontend && yarn",
     "setup:backend": "cd backend && yarn",
+    "build:frontend": "cd frontend && yarn build && yarn start",
+    "build:backend": "cd backend && yarn build && yarn start",
+    "build" : "yarn build:backend && yarn build:frontend",
     "setup": "yarn install && yarn setup:frontend && yarn setup:backend",
+    "start": "concurrently \"cd backend && yarn start\" \"cd frontend && yarn start\"",
     "dev": "yarn clear && concurrently \"cd frontend && yarn dev\" \"cd backend && yarn develop\"",
     "repo:upstream": "git fetch upstream && git merge upstream/main"
   },
