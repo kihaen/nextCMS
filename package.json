@@ -5,6 +5,7 @@
     "clear": "cd frontend && rm -rf .next && rm -rf cache",
     "setup:frontend": "cd frontend && yarn",
     "setup:backend": "cd backend && yarn",
+    "installCommand": "yum install -y hostname && npm ci",
     "build:frontend": "cd frontend && yarn build && yarn start",
     "build:backend": "cd backend && yarn build && yarn start",
     "build" : "yarn build:backend && yarn build:frontend",
