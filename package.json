@@ -14,10 +14,6 @@
     "dev": "yarn clear && concurrently \"cd frontend && yarn dev\" \"cd backend && yarn develop\"",
     "repo:upstream": "git fetch upstream && git merge upstream/main"
   },
-  "engines": {
-    "node": ">=14.19.1 <=18.x.x",
-    "npm": ">=6.0.0"
-  },
   "dependencies": {
     "concurrently": "^7.6.0"
   }
