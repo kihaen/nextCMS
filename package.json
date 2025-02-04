@@ -15,8 +15,7 @@
     "repo:upstream": "git fetch upstream && git merge upstream/main"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
-    "npm": ">=6.0.0"
+    "node": ">=14.19.1 <=18.x.x"
   },
   "dependencies": {
     "concurrently": "^7.6.0"
