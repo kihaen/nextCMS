@@ -7,12 +7,16 @@
     "setup:backend": "cd backend && yarn",
     "installCommand": "yum install -y hostname && yarn install",
     "build:frontend": "cd frontend && yarn build",
-    "build:backend": "cd backend && yarn build",
+    "build:backend": "cd backend && yarn build && yarn start",
     "build" : "yarn build:backend && yarn build:frontend",
     "setup": "yarn install && yarn setup:frontend && yarn setup:backend",
     "start": "concurrently \"cd backend && yarn start\" \"cd frontend && yarn start\"",
     "dev": "yarn clear && concurrently \"cd frontend && yarn dev\" \"cd backend && yarn develop\"",
     "repo:upstream": "git fetch upstream && git merge upstream/main"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
   },
   "dependencies": {
     "concurrently": "^7.6.0"
