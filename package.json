@@ -5,7 +5,7 @@
     "clear": "cd frontend && rm -rf .next && rm -rf cache",
     "setup:frontend": "cd frontend && yarn",
     "setup:backend": "cd backend && yarn",
-    "installCommand": "yum install -y hostname && yarn install",
+    "installCommand": "yum install -y hostname && yarn install --check-cache",
     "build:frontend": "cd frontend && yarn build",
     "build:backend": "cd backend && yarn build",
     "build" : "yarn build:backend && yarn build:frontend",
