@@ -9,7 +9,7 @@
     "build:frontend": "cd frontend && yarn build",
     "build:backend": "cd backend && yarn build",
     "build" : "yarn build:backend && yarn build:frontend",
-    "setup": "yarn install && yarn setup:frontend && yarn setup:backend",
+    "setup": "yarn install --check-cache && yarn setup:frontend && yarn setup:backend",
     "start": "concurrently \"cd backend && yarn start\" \"cd frontend && yarn start\"",
     "dev": "yarn clear && concurrently \"cd frontend && yarn dev\" \"cd backend && yarn develop\"",
     "repo:upstream": "git fetch upstream && git merge upstream/main"
